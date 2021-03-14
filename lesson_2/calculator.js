@@ -24,17 +24,17 @@ let operation = readline.question();
 let output;
 switch (operation) {
   case '1':
-  output = Number(number1) + Number(number2);
-  break;
+    output = Number(number1) + Number(number2);
+    break;
   case '2':
-  output = Number(number1) - Number(number2);
-  break;
+    output = Number(number1) - Number(number2);
+    break;
   case '3':
-  output = Number(number1) * Number(number2);
-  break;
+    output = Number(number1) * Number(number2);
+    break;
   case '4':
-  output = Number(number1) / Number(number2);
-  break;
+    output = Number(number1) / Number(number2);
+    break;
 }
 
 prompt(`The result is ${output}.`);
