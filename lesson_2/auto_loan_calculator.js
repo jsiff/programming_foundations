@@ -52,5 +52,5 @@ while (true) {
     answer = readline.question().toLowerCase();
   }
 
-  if (answer[0] === 'n') break;
+  if (answer[0] === 'n') break; // program doesn't end without break statement
 }
