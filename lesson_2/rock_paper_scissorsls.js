@@ -35,9 +35,9 @@ function scoreCount(choice, computerChoice) {
   if (playerVictor(choice, computerChoice)) {
     playerScore++;
   } else if (choice === computerChoice) {
-    
+    // a tie registers nothing
   } else {
-    compScore ++
+    compScore++;
   }
 
 }
@@ -48,13 +48,13 @@ function displayGrandWinner() {
   } else if (compScore === WINS_NEEDED) {
     prompt('The computer is the victor!');
   } else {
-    
+    // empty
   }
 }
 
 while (true) {
   prompt(`Choose one of the following: r for rock, p for paper, sc for scissors
-  l for lizard or sp for spock`); 
+  l for lizard or sp for spock`);
   const OPTS = ['r', 'p', 'sc', 'l', 'sp'];
 
   let option = readline.question().toLowerCase();
@@ -63,7 +63,7 @@ while (true) {
   if (!OPTS.includes(option)) {
     prompt("That's not a valid choice");
     option = readline.question().toLowerCase();
-   }
+  }
 
   switch (option) {
     case 'r':
@@ -85,7 +85,7 @@ while (true) {
 
   let randomIndex = Math.floor(Math.random() * VALID_CHOICES.length);
   let computerChoice = VALID_CHOICES[randomIndex];
-  
+
   displayWinner(choice, computerChoice);
   scoreCount(choice, computerChoice);
   displayGrandWinner();
