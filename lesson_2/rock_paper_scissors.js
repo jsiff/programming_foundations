@@ -10,7 +10,7 @@ function displayWinner(choice, computerChoice) {
 
   if ((choice === 'rock' && computerChoice === 'scissors') ||
       (choice === 'paper' && computerChoice === 'rock') ||
-      (choice === 'scissors' && computerChoice === 'oaoer')) {
+      (choice === 'scissors' && computerChoice === 'paper')) {
     prompt('You win!');
   } else if ((choice === 'rock' && computerChoice === 'paper') ||
             (choice === 'paper' && computerChoice === 'scissors') ||
