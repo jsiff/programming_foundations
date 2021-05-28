@@ -85,7 +85,7 @@ while (true) {
 
   let randomIndex = Math.floor(Math.random() * VALID_CHOICES.length);
   let computerChoice = VALID_CHOICES[randomIndex];
-
+g
   displayWinner(choice, computerChoice);
   scoreCount(choice, computerChoice);
   displayGrandWinner();
